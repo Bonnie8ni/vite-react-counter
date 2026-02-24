@@ -1,16 +1,83 @@
-# React + Vite
+![Vercel](https://img.shields.io/badge/deployed%20on-vercel-black)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# React + Vite 練習專案
 
-Currently, two official plugins are available:
+本專案用於練習現代 React 開發流程，從專案建立、Git 分支管理，到自動化部署與 Preview Deploy 的完整實作。
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🌐 Live Demo
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+👉 **線上展示**
 
-## Expanding the ESLint configuration
+- Production（main）  
+  https://vite-react-counter-seven.vercel.app/
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+> 每次合併至 `main` 分支後，Vercel 會自動重新部署正式站。
+
+---
+
+## 🧪 練習內容
+
+### 1️⃣ 使用 Vite 建立 React 專案
+- 使用 **Vite** 初始化 React 專案
+- 選擇 **JavaScript + SWC**
+- 體驗快速開發與 Hot Module Replacement（HMR）
+
+---
+
+### 2️⃣ GitHub 與 Vercel 整合
+- 將專案推送至 GitHub Repository
+- 連接 Vercel 進行自動化部署
+- 建立 Continuous Deployment 流程
+
+---
+
+### 3️⃣ Feature Branch 開發流程
+- 建立 `feature/*` 分支進行功能開發
+- 避免直接在 `main` 分支修改
+- 練習 Git Branch Workflow
+
+---
+
+### 4️⃣ Preview Deployment（重點練習）
+- Push feature branch 後
+- Vercel 自動產生 **Preview Deploy**
+- 可透過獨立網址驗證功能修改
+
+實現流程：feature branch → push → 自動建立 Preview 網站
+
+---
+
+### 5️⃣ 合併至 main 自動部署
+- 建立 Pull Request
+- Merge 回 `main`
+- Vercel 自動更新 Production Site
+
+實現流程：PR Merge → Production Auto Deploy
+
+---
+
+## 🚀 本次學習重點
+
+- 現代 React 專案初始化流程
+- Git Branch 開發策略
+- Preview Environment 概念
+- CI/CD 自動部署流程
+- Vercel 雲端部署實務
+
+---
+
+## 🛠️ 技術使用
+
+- React
+- Vite（JavaScript + SWC）
+- Git / GitHub
+- Vercel
+- GitHub Flow
+
+---
+
+## 📚 專案目的
+
+透過實際操作熟悉現代前端工程開發流程，建立從 **本機開發 → Git 管理 → 雲端部署** 的完整開發經驗。
